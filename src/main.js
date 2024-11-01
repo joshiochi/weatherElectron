@@ -38,7 +38,7 @@ btnRead.addEventListener('click', function() {
             ${storedWeatherData.windSpeed}
             ${storedWeatherData.humidity}
             ${storedWeatherData.rainChance}
-            ${storedWeatherData.localTime} // Display local time
+            ${storedWeatherData.localTime} 
         `;
         fileContents.value = weatherText.trim();
     } else {
