@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+
+/* CSS Variables for color and size */
+:root {
+    --primary-color: #2c3855;
+    --primary-color-dark: #435681;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --extra-light: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+/* Global reset for margin, padding and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.section__container__homepage {
+    max-width: var(--max-width);
+    width: 100%; /* Add this for width */
+    height: 500px; /* Add this for height */
+    margin: auto;
+    padding: 5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 38px -6px rgba(189,189,189,1);
+    -moz-box-shadow: 0px 0px 38px -6px rgba(189,189,189,1);
+    box-shadow: 0px 0px 38px -6px rgba(189,189,189,1);
+    background-image: url("images/back-weather.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.section__container__about {
+    max-width: var(--max-width);
+    width: 100%; /* Add this for width */
+    height: 500px; /* Add this for height */
+    margin: auto;
+    padding: 5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 38px -6px rgba(189,189,189,1);
+    -moz-box-shadow: 0px 0px 38px -6px rgba(189,189,189,1);
+    box-shadow: 0px 0px 38px -6px rgba(189,189,189,1);
+
+    background-image: url("images/Christmas_95.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.section__container__index {
+    max-width: var(--max-width);
+    width: 100%; /* Add this for width */
+    height: 500px; /* Add this for height */
+    margin: auto;
+    padding: 5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 38px -6px rgba(189,189,189,1);
+    -moz-box-shadow: 0px 0px 38px -6px rgba(189,189,189,1);
+    box-shadow: 0px 0px 38px -6px rgba(189,189,189,1);
+
+    background-image: url("images/paper_clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Header container styling */
+.header__container {
+    padding: 1rem 1rem 5rem 1rem;
+
+}
+
+#hero {
+    position: absolute;
+    z-index: 10;
+    width: 500px;
+    top: 6%;
+    right: 20%;
+}
+
+.weather-info {
+    height: 350px;
+}
+
+.weather-info h1 {
+    font-size: 95px;
+    line-height: 95px;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+
+.weather-info p {
+    padding-left: 5%;
+    margin-top: 5px;
+
+}
+
+/* Navigation bar styling */
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a {
+    font-weight: 500;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: var(--primary-color);
+}
+
+/* Header container styling */
+.header__container {
+    padding: 1rem 1rem 5rem 1rem;
+}
+
+.header__image__container {
+    position: relative;
+    min-height: 300px;
+    background-image: linear-gradient(
+        to right,
+        rgba(44, 56, 85, 0.9),
+        rgba(100, 125, 187, 0.1)
+    ),
+    url("images/header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+.header__content {
+    max-width: 600px;
+    padding: 5rem 2rem;
+    margin-top: -2rem; /* This moves it up by 2rem */
+
+}
+
+.header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.header__content h2 {
+    height: 90px;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 3.0rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.header__content p {
+    color: var(--text-dark);
+}
+
+/* Booking form container styling */
+.booking__container {
+    position: absolute;
+    width: 100%; /* Add this for width */
+    height: 130px; /* Add this for height */
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 25rem);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    
+}
+
+main {
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.search-weather p{
+    font-size: 40px;
+    margin-top: -2rem; /* This moves it up by 2rem */
+}
+
+#location-input {
+    width: 300px; /* Sets the width of the input field */
+    height: 40px; /* Sets the height of the input field */
+    padding: 10px; /* Adds some padding for better usability */
+    font-size: 16px; /* Adjusts the font size */
+    border-radius: 10px;
+}
+
+#fileName {
+    width: 900px; /* Sets the width of the input field */
+    height: 40px; /* Sets the height of the input field */
+    padding: 10px; /* Adds some padding for better usability */
+    font-size: 16px; /* Adjusts the font size */
+    border-radius: 10px;
+}
+
+#fileContents {
+    width: 900px; /* Sets the width of the input field */
+    height: 150px; /* Sets the height of the input field */
+    padding: 10px; /* Adds some padding for better usability */
+    font-size: 16px; /* Adjusts the font size */
+    border-radius: 10px;
+}
+
+
+/* Add this to the parent container of your button */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Add this to the parent container of your button */
+.button-container-homepage {
+    display: flex;
+    justify-content: right;
+}
+
+.btn {
+    width: 150px; /* Sets the width of the button */
+    height: 70px; /* Sets the height of the button */
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px; /* Adds some space between input and button */
+}
+
+.btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+@media (width < 600px) {
+    .nav__links {
+        display: none;
+    }
+
+    .header__container {
+        padding-bottom: 25rem;
+    }
+
+    .booking__container {
+        flex-direction: column;
+        bottom: -25rem;
+    }
+
+    .booking__container form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
